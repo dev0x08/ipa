@@ -206,7 +206,9 @@ function createFileCard(app) {
 function openFileModal(app) {
     document.getElementById('modalIcon').src = app.icon;
     document.getElementById('modalTitle').textContent = app.name;
-    document.getElementById('modalVersion').textContent = 'Phiên bản: ' + app.version + ' • Kích thước: ' + app.size;
+    document.getElementById('modalVersion').textContent = 'Phiên bản: ' + app.version;
+    document.getElementById('modalSize').textcontent = 'Kích thước: ' + app.size;
+    document.getElementById('modalUpdate').textContent ='Ngày cậpt nhật: ' +app.update;
     document.getElementById('modalDescription').textContent = app.description;
     
     // Setup buttons
