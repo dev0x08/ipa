@@ -190,7 +190,7 @@ function createFileCard(app) {
                 downloadLink: '${app.downloadLink}'
             })">
                 <i class="fas fa-download"></i>
-                Tải xuống
+                Tải xuống ipa
             </button>
         </div>
     `;
@@ -208,7 +208,7 @@ function openFileModal(app) {
     document.getElementById('modalTitle').textContent = app.name;
     document.getElementById('modalVersion').textContent = 'Phiên bản: ' + app.version;
     document.getElementById('modalSize').textcontent = 'Kích thước: ' + app.size;
-    document.getElementById('modalUpdate').textContent ='Ngày cậpt nhật: ' +app.update;
+    document.getElementById('modalUpdate').textContent ='Ngày cập nhật: ' +app.addedDate;
     document.getElementById('modalDescription').textContent = app.description;
     
     // Setup buttons
